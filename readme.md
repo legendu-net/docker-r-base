@@ -12,12 +12,14 @@ Run the docker with one of the following commands.
 
 ```
 docker run -d \
+    --log-opt max-size=50m \
     -v /wwwroot:/wwwroot \
     dclong/r-base 
 ```
 
 ```
 docker run -d \
+    --log-opt max-size=50m \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_PASSWORD=`id -un` \
@@ -26,6 +28,7 @@ docker run -d \
 ```
 ```
 docker run -d \
+    --log-opt max-size=50m \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     -v /wwwroot:/wwwroot \
