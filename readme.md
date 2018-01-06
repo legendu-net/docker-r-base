@@ -34,3 +34,10 @@ docker run -d \
     -v /wwwroot:/wwwroot \
     dclong/r-base
 ```
+## Derived Images Based [dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)
+
+[dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)
+- [dclong/r-base](https://hub.docker.com/r/dclong/r-base/)
+    - [dclong/r-pop](https://hub.docker.com/r/dclong/r-pop/)
+        - [dclong/rstudio](https://hub.docker.com/r/dclong/rstudio/)
+
