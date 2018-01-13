@@ -6,4 +6,4 @@ Run apt-get update \
     && apt-get autoremove \
     && apt-get autoclean
 
-ADD Renviron.site /etc/R/Renviron.site
+# ADD settings/Renviron.site /etc/R/Renviron.site
