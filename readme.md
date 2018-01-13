@@ -11,14 +11,14 @@ R base.
 Run the docker with one of the following commands.
 
 ```
-docker run -d \
+docker run -it \
     --log-opt max-size=50m \
     -v /wwwroot:/wwwroot \
     dclong/r-base 
 ```
 
 ```
-docker run -d \
+docker run -it \
     --log-opt max-size=50m \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
@@ -26,14 +26,7 @@ docker run -d \
     -v /wwwroot:/wwwroot \
     dclong/r-base
 ```
-```
-docker run -d \
-    --log-opt max-size=50m \
-    -e DOCKER_USER=`id -un` \
-    -e DOCKER_USER_ID=`id -u` \
-    -v /wwwroot:/wwwroot \
-    dclong/r-base
-```
+
 ## Image Tree Related to [dclong/r-base](https://hub.docker.com/r/dclong/r-base/)
 
 [dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)
