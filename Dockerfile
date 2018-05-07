@@ -1,7 +1,8 @@
 FROM dclong/ubuntu_b
 
-Run apt-get update \
-    && apt-get -y --no-install-recommends install \
+RUN DEBIAN_FRONTEND=noninteractive \
+    && apt-get update \
+    && apt-get install -y \
         r-base-dev \
     && apt-get autoremove \
     && apt-get autoclean
